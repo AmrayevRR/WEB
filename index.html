@@ -1,58 +1,29 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Project: Blog</title>
-        <style>
-            h1, h2 {
-                font-family: fantasy;
-            }
-            h1, h2, h3, h6, ul, p {
-                background-color : rgb(250, 235, 147);
-            }
-            h1, h2, h6 {
-                text-align : center;
-            }
-            h6 {
-                font-family : monospace;
-            }
-            .quote, .quoteAuthor {
-                font-style :italic;
-            }
-            .quoteAuthor {
-                text-align : right;
-            }
-        </style>
-    </head>
-    <body>
-        
-        <h1>Ramir's blog</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel = "stylesheet" href = "./style.css">
+    <title>ToDo List</title>
+</head>
+<body>
+    <header>
+        <h1>ToDo List</h1>
+    </header>
+    <form action="">
+        <input type="text" class = "toDo-input">
+        <button class = "toDo-button" type = "submit">
+            <i class = "fas fa-plus-square"></i>
+        </button>
+    </form>
+    <div class="toDo-container">
+        <ul class="toDo-list"></ul>
+    </div>
 
-        <h3>Contents</h3>
-        <ul>
-            <li><a href = "#first_post">Ana's story</a></li>
-            <li><a href = "#second_post">Jonathan's story</a></li>
-            <li><a href = "#third_post">Donna's story</a></li>
-        </ul>
-        
-        <h2 id = "first_post">Ana's story</h2>
-        <img src = "https://www.kasandbox.org/programming-images/landscapes/beach-in-hawaii.png" width = "600">
-        <h6>26.05.2020</h6>
-        
-        <p class = "quote">"Look deep into nature, and then you will understand everything better."</p>
-        <p class = "quoteAuthor">Albert Einstein</p>
-        <p>My son took his first flight at the age of four. He was scared about flying, so he called the attendant over and told her that he wanted the plane not to “flight” but just to get “going on the road!” The flight attendant played along and agreed. As the plane sped down the runway, my son called back to her, <em>“I told you by road, but not so fast!!!” —Ana Carolina Carrillo, Campeche, Mexico</em> </p>
-        <h2 id = "second_post">Jonathan's story</h2>
-        <img src = "https://www.kasandbox.org/programming-images/animals/cat.png" width = "600">
-        <h6>25.06.2020</h6>
-        <p class = "quote">“Time spent with cats is never wasted.”</p>
-        <p class = "quoteAuthor">Sigmund Freud</p>
-        <p>Uncle Bart was a city boy whose familiarity with wildlife began and ended with pigeons. One time he joined us at our cabin in the woods. In the evening, he opened the door to let our cats in. The first cat walked in; then the second. Bart stood there coaxing the third cat to come, which we found strange—we had only two cats. The third cat was a possum. <em>—Jonathan Hakulin, Baltimore, Maryland</em></p>
-        <h1 id = "third_post">Donna's story</h1>
-        <img src = "https://www.kasandbox.org/programming-images/landscapes/lotus-garden.png">
-        <p>On our way to go spelunking, we got lost on a country road. We stopped to ask a farmer, “Is this the road to Waynesville?”
-“Yes, it is,” he replied. As we started to drive away, we barely heard him add, “But you’re going the wrong way.” <em>—Doug Hissong, Cypress, Texas</em></p>
-        
-        
-    </body>
+    <script src = "./app.js"></script>
+</body>
 </html>
